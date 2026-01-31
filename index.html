@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTA Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+<main class="container">
+<h1 class="title">Parent Teacher Association Form</h1>
+<p class="instruction">Kindly complete the form below so we can arrange your parent-teacher meeting.</p>
+<form>
+<fieldset class="student-detail">
+<legend>Student Detail</legend>
+<label for="student-name">Full Name: </label>
+<input type="text" id="student-name" name="student-name" placeholder="e.g. John Smith" required />
+<label for="grade">Grade: </label>
+<input type="text" id="grade" name="grade" placeholder="e.g. 5th Grade" required />
+</fieldset>
+<fieldset class="parent-detail">
+<legend>Parent/Guardian Detail</legend>
+<label for="parent-name">Parent/Guardian Name: </label>
+<input type="text" id="parent-name" name="parent-name" placeholder="e.g. Jane Smith" required />
+</fieldset>
+<fieldset class="contact-preference">
+<legend>Contact Preference</legend>
+<label for="email">Email: </label>
+<input type="radio" id="email" name="contact-method" value="email" required />
+<label for="phone">Phone: </label>
+<input type="radio" id="phone" name="contact-method" value="phone" required />
+</fieldset>
+<fieldset class="notes">
+<legend>Supporting Remarks</legend>
+<p>Other details you'd like us to know about your child's progress or any concerns you may have."</p>
+<textarea id="notes" name="notes" placeholder="message here!"></textarea>
+</fieldset>
+<button type="submit" class="submit-button">Submit</button>
+</form>
+<footer class="footer">
+<p>© 2024 Fidex College of Technology. All rights reserved.</p>
+</footer>
+</main>
+</body>
+</html>
